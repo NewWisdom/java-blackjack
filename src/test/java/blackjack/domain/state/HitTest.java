@@ -43,4 +43,16 @@ public class HitTest {
 
         assertThat(state).isInstanceOf(Hit.class);
     }
+
+    @Test
+    @DisplayName("카드 받기 멈춤 상태를 확인한다.")
+    void stay() {
+        Hit hit = new Hit(new Cards(
+                new Card(Suit.CLOVER, Denomination.ACE),
+                new Card(Suit.HEART, Denomination.ACE)));
+
+        State state = hit.stay();
+
+        assertThat(state).isInstanceOf(Stay.class);
+    }
 }

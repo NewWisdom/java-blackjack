@@ -11,7 +11,7 @@ public class Hit extends Running {
     @Override
     public State draw(Card card) {
         cards.add(card);
-        if (cards.isBust()){
+        if (cards.isBust()) {
             return new Bust(cards);
         }
         return this;
@@ -19,6 +19,6 @@ public class Hit extends Running {
 
     @Override
     public State stay() {
-        return null;
+        return new Stay(cards);
     }
 }
