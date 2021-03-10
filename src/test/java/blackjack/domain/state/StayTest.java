@@ -16,7 +16,7 @@ public class StayTest {
     void createStay() {
         Stay stay = new Stay(new Cards(
                 new Card(Suit.CLOVER, Denomination.JACK),
-                new Card(Suit.HEART, Denomination.TEN)));
+                new Card(Suit.HEART, Denomination.QUEEN)));
 
         assertThat(stay).isInstanceOf(Stay.class);
     }
@@ -26,7 +26,7 @@ public class StayTest {
     void draw() {
         Stay stay = new Stay(new Cards(
                 new Card(Suit.CLOVER, Denomination.JACK),
-                new Card(Suit.HEART, Denomination.TEN)));
+                new Card(Suit.HEART, Denomination.QUEEN)));
         Card card = new Card(Suit.CLOVER, Denomination.EIGHT);
 
 
@@ -39,7 +39,7 @@ public class StayTest {
     void name() {
         Stay stay = new Stay(new Cards(
                 new Card(Suit.CLOVER, Denomination.JACK),
-                new Card(Suit.HEART, Denomination.TEN)));
+                new Card(Suit.HEART, Denomination.QUEEN)));
         Card card = new Card(Suit.CLOVER, Denomination.EIGHT);
 
         assertThatThrownBy(stay::stay)
@@ -51,7 +51,7 @@ public class StayTest {
     void isFinish() {
         Stay stay = new Stay(new Cards(
                 new Card(Suit.CLOVER, Denomination.JACK),
-                new Card(Suit.HEART, Denomination.TEN)));
+                new Card(Suit.HEART, Denomination.QUEEN)));
 
         boolean isFinished = stay.isFinish();
 

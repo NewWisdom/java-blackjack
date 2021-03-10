@@ -17,7 +17,7 @@ public class BustTest {
         Bust bust = new Bust(new Cards(
                 new Card(Suit.CLOVER, Denomination.JACK),
                 new Card(Suit.CLOVER, Denomination.JACK),
-                new Card(Suit.HEART, Denomination.TEN)));
+                new Card(Suit.HEART, Denomination.QUEEN)));
 
         assertThat(bust).isInstanceOf(Bust.class);
     }
@@ -28,7 +28,7 @@ public class BustTest {
         Bust bust = new Bust(new Cards(
                 new Card(Suit.CLOVER, Denomination.JACK),
                 new Card(Suit.CLOVER, Denomination.JACK),
-                new Card(Suit.HEART, Denomination.TEN)));
+                new Card(Suit.HEART, Denomination.QUEEN)));
         Card card = new Card(Suit.DIAMOND, Denomination.JACK);
 
 
@@ -42,7 +42,7 @@ public class BustTest {
         Bust bust = new Bust(new Cards(
                 new Card(Suit.CLOVER, Denomination.JACK),
                 new Card(Suit.CLOVER, Denomination.JACK),
-                new Card(Suit.HEART, Denomination.TEN)));
+                new Card(Suit.HEART, Denomination.QUEEN)));
         Card card = new Card(Suit.CLOVER, Denomination.EIGHT);
 
         assertThatThrownBy(bust::stay)
@@ -55,7 +55,7 @@ public class BustTest {
         Bust bust = new Bust(new Cards(
                 new Card(Suit.CLOVER, Denomination.JACK),
                 new Card(Suit.CLOVER, Denomination.JACK),
-                new Card(Suit.HEART, Denomination.TEN)));
+                new Card(Suit.HEART, Denomination.QUEEN)));
 
         boolean isFinished = bust.isFinish();
 

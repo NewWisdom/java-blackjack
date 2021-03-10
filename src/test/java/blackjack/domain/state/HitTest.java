@@ -25,7 +25,7 @@ public class HitTest {
     void hitDraw1() {
         Hit hit = new Hit(new Cards(
                 new Card(Suit.CLOVER, Denomination.JACK),
-                new Card(Suit.HEART, Denomination.TEN)));
+                new Card(Suit.HEART, Denomination.JACK)));
 
         State state = hit.draw(new Card(Suit.CLOVER, Denomination.EIGHT));
 
